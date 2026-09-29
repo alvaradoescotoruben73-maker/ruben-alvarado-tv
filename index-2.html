@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rubén Alvarado TV</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#071018;color:#fff;line-height:1.5}
+nav{position:sticky;top:0;z-index:10;background:#05090d;border-bottom:1px solid #26323b;display:flex;align-items:center;justify-content:space-between;padding:14px 5%;gap:20px}
+.logo{font-size:24px;font-weight:900;white-space:nowrap}.logo span{color:#ff2028}
+nav ul{display:flex;list-style:none;gap:18px;flex-wrap:wrap;justify-content:flex-end}
+nav a{color:#fff;text-decoration:none;font-weight:700;font-size:14px}
+nav a:hover{color:#ff3038}
+.hero{min-height:500px;display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 6%;background:
+linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.75)),url('portada.png') center/cover no-repeat}
+.hero h1{font-size:clamp(42px,8vw,92px);font-weight:950;letter-spacing:2px;text-shadow:0 5px 20px #000}
+.hero h1 span{color:#ff2028}.hero p{font-size:clamp(18px,3vw,28px);margin:12px 0 25px;letter-spacing:3px}
+.btn{display:inline-block;background:#ed1c24;color:#fff;text-decoration:none;padding:13px 25px;border-radius:8px;font-weight:800}
+section{padding:55px 5%;max-width:1250px;margin:auto}
+h2{font-size:34px;margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px}
+.card{background:#111c25;border:1px solid #2d3b46;border-radius:14px;padding:24px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between}
+.card h3{font-size:21px}.card p{color:#b8c1c8;margin-top:8px}.card a{color:#fff;background:#ed1c24;text-decoration:none;padding:9px 14px;border-radius:7px;width:max-content;margin-top:15px;font-weight:700}
+.videos .video{background:#101a22;border-radius:12px;overflow:hidden;border:1px solid #2a3740}
+.thumb{height:150px;background:linear-gradient(135deg,#1a4b74,#121212);display:flex;align-items:center;justify-content:center;font-size:48px}
+.video .info{padding:15px}.video h3{font-size:17px}.video p{color:#9da8b0;margin-top:6px}
+footer{background:#03070a;border-top:1px solid #26323b;padding:35px 5%;text-align:center;color:#aeb7bd}
+.social{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:18px}.social a{color:#fff;text-decoration:none;background:#17222b;padding:10px 15px;border-radius:8px}
+@media(max-width:700px){nav{align-items:flex-start;flex-direction:column}.hero{min-height:430px}.hero p{letter-spacing:1px}section{padding:40px 5%}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">▶ RUBÉN ALVARADO <span>TV</span></div>
+  <ul>
+    <li><a href="#inicio">Inicio</a></li><li><a href="#videos">Videos</a></li>
+    <li><a href="#podcast">Podcast</a></li><li><a href="#historia">Historia</a></li>
+    <li><a href="#ia">IA</a></li><li><a href="#recetas">Recetas</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+
+<header id="inicio" class="hero">
+  <div>
+    <h1>RUBÉN ALVARADO <span>TV</span></h1>
+    <p>DESCUBRE • APRENDE • SORPRÉNDETE</p>
+    <a class="btn" href="#videos">Ver videos</a>
+  </div>
+</header>
+
+<section>
+  <h2>Explora el contenido</h2>
+  <div class="grid">
+    <div class="card" id="historia"><h3>🏛️ Historia y civilizaciones</h3><p>Egipcios, incas, mayas, vikingos y grandes misterios del pasado.</p><a href="#videos">Ver más</a></div>
+    <div class="card" id="ia"><h3>🤖 Inteligencia artificial</h3><p>Tecnología, robots y la relación entre IA y seres humanos.</p><a href="#videos">Ver más</a></div>
+    <div class="card" id="recetas"><h3>🍳 Recetas</h3><p>Preparaciones sencillas y deliciosas para compartir.</p><a href="#videos">Ver más</a></div>
+    <div class="card" id="podcast"><h3>🎙️ Podcast</h3><p>Conversaciones y temas para descubrir nuevas ideas.</p><a href="#videos">Ver más</a></div>
+    <div class="card"><h3>🔎 Curiosidades y misterios</h3><p>Historias sorprendentes, enigmas y preguntas que despiertan la imaginación.</p><a href="#videos">Ver más</a></div>
+  </div>
+</section>
+
+<section id="videos" class="videos">
+  <h2>🎬 Videos recientes</h2>
+  <div class="grid">
+    <div class="video"><div class="thumb">🏺</div><div class="info"><h3>Civilizaciones desaparecidas: Los egipcios</h3><p>Historia y curiosidades</p></div></div>
+    <div class="video"><div class="thumb">🤖</div><div class="info"><h3>Inteligencia artificial: ¿Aliada o reemplazo?</h3><p>Tecnología y futuro</p></div></div>
+    <div class="video"><div class="thumb">🍳</div><div class="info"><h3>Cómo preparar un omelette de jamón, tocino y papa</h3><p>Recetas</p></div></div>
+    <div class="video"><div class="thumb">⛰️</div><div class="info"><h3>Los Incas: la gran civilización de los Andes</h3><p>Historia</p></div></div>
+  </div>
+</section>
+
+<footer id="contacto">
+  <h2>Rubén Alvarado TV</h2>
+  <p>Historias, tecnología, recetas, podcasts y curiosidades.</p>
+  <div class="social">
+    <a href="https://youtube.com/@rubenalvaradoescoto?si=Ca-BCccBhxEzhmlc" target="_blank" rel="noopener" aria-label="YouTube">▶ YouTube</a>
+    <a href="https://www.facebook.com/share/19iwBPN8ts/" target="_blank" rel="noopener" aria-label="Facebook">f Facebook</a>
+    <a href="https://www.tiktok.com/@ruben_alvarado53" target="_blank" rel="noopener" aria-label="TikTok">♪ TikTok</a>
+    <a href="https://www.instagram.com/escotorubenalvarado?stkn=eGhnbndsZ3J0OWo5" target="_blank" rel="noopener" aria-label="Instagram">◎ Instagram</a>
+  </div>
+  <p style="margin-top:20px;font-size:13px">© 2026 Rubén Alvarado TV</p>
+</footer>
+</body>
+</html>
